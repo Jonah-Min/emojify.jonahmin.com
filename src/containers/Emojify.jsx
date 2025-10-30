@@ -31,9 +31,9 @@ class EmojifyApp extends React.PureComponent {
                     charList.push(letter);
                 }
             }
-        })
+        });
         return charList;
-    }
+    };
 
     updateEmojiString = e => {
         const inputString = e.target.value;
@@ -71,7 +71,7 @@ class EmojifyApp extends React.PureComponent {
         }
 
         this.setState({ emojiString, copied: false });
-    }
+    };
 
     render() {
         return (
@@ -79,7 +79,7 @@ class EmojifyApp extends React.PureComponent {
                 <span
                     className="header"
                     role="img"
-                    aria-label="The HubSpot Emoji Phrase Generator"
+                    aria-label="The HubSpot Emoji Text Generator"
                 >
                     🔥The HubSpot Emoji Phrase Generator🔥
                 </span>
@@ -106,7 +106,7 @@ class EmojifyApp extends React.PureComponent {
                         <button
                             className="copy-button"
                             onClick={() => {
-                                console.log(this.state.emojiString)
+                                console.log(this.state.emojiString);
                                 this.setState({ copied: true });
                                 navigator.clipboard.writeText(this.state.emojiString);
                             }}>
