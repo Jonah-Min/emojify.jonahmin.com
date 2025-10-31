@@ -81,7 +81,7 @@ class EmojifyApp extends React.PureComponent {
                     role="img"
                     aria-label="The HubSpot Emoji Text Generator!"
                 >
-                    🔥The HubSpot Emoji Phrase Generator🔥
+                    🔥The HubSpot Emoji Text Generator🔥
                 </span>
                 <span className="toggles">
                     <label>
